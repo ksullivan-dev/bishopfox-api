@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scan_args: MyString
+  nmap_version: MyString
+  xml_version: 1.5
+  start_time: 
+  stop_time: 
+  exit: MyString
+  errormsg: MyString
+  verbose: 
+  debug: 
+  host_up: 
+  hosts_down: 
+  id: MyString
+
+two:
+  scan_args: MyString
+  nmap_version: MyString
+  xml_version: 1.5
+  start_time: 
+  stop_time: 
+  exit: MyString
+  errormsg: MyString
+  verbose: 
+  debug: 
+  host_up: 
+  hosts_down: 
+  id: MyString
