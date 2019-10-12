@@ -1,10 +1,6 @@
-require 'nmap/parser'
-
 class NmapController < ApplicationController
   def index
-    doc = File.open("./app/data/nmap.results.xml")
-
-    parser = Nmap::Parser.parsefile(doc)
+    parser = Import::ImportXml.call("./app/data/nmap.results.xml")
     render json: { her: 1, parser: parser }
   end
 end
