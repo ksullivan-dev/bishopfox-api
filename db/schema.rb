@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2019_10_11_211458) do
   create_table "ports", force: :cascade do |t|
     t.integer "host_id"
     t.integer "scan_id"
-    t.string "type"
+    t.string "proto"
     t.integer "num"
     t.string "state"
     t.string "reason"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2019_10_11_211458) do
     t.string "reason_ip"
     t.string "service_name"
     t.string "service_method"
-    t.integer "sercie_conf"
+    t.integer "service_conf"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["host_id"], name: "index_ports_on_host_id"
