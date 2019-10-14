@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(version: 2019_10_11_211458) do
     t.string "errormsg"
     t.integer "verbose"
     t.integer "debug"
-    t.integer "host_up"
+    t.integer "hosts_up"
     t.integer "hosts_down"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

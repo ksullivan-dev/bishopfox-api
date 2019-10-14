@@ -10,7 +10,7 @@ class CreateScans < ActiveRecord::Migration[5.2]
       t.string :errormsg
       t.integer :verbose
       t.integer :debug
-      t.integer :host_up
+      t.integer :hosts_up
       t.integer :hosts_down
 
       t.timestamps

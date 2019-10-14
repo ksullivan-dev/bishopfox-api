@@ -25,7 +25,7 @@ class Import::ImportXml < ApplicationService
       errormsg: s.errormsg,
       verbose: s.verbose,
       debug: s.debug,
-      host_up: s.numhosts("up"),
+      hosts_up: s.numhosts("up"),
       hosts_down: s.numhosts("down")
     }
     @scan = Scan.create(attrs)
