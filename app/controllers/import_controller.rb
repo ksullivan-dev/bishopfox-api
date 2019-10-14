@@ -17,4 +17,10 @@ class ImportController < ApplicationController
       end
 
     end
+
+    def destroy
+      @scan = Scan.find(params[:id])
+      @scan.destroy
+      render json: { redirect: true, redirect_url: "/scans" }
+    end
 end
