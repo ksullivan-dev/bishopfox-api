@@ -1,6 +1,11 @@
 class ImportController < ApplicationController
     def index
-      render json: { message: 'this is the import controller', scans: Scan.all }, :include => {:hosts => {:include => :ports}}
+      render json: { message: 'this is the import controller', scans: Scan.all }
+    end
+
+    def show
+      @scan = Scan.find(params[:id])
+      render json: @scan, :include => {:hosts => {:include => :ports}}
     end
 
     def create
