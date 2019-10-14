@@ -8,8 +8,7 @@ class Import::ImportXml < ApplicationService
 
   def call
     hydrate_scan
-    # return @data
-    return true
+    return {success: true, scan: @scan}
   end
 
   private
