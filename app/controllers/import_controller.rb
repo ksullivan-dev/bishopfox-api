@@ -4,12 +4,12 @@ class ImportController < ApplicationController
     end
 
     def create
-    data = Import::ImportXml.call('./app/data/nmap.results.xml')
-    if data
-      render json: { message: "NMAP XML imported successfully", data: data, scans: Scan.all }, :include => {:hosts => {:include => :params}}
-    else
-      render json: { message: "Import Failed", data: data }
-    end
+      data = Import::ImportXml.call(params[:imported_file].path)
+      if data
+        render json: { message: "NMAP XML imported successfully", data: data, scans: Scan.all }, :include => {:hosts => {:include => :ports}}
+      else
+        render json: { message: "Import Failed", data: data }
+      end
 
     end
 end
