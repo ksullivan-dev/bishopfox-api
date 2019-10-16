@@ -43,6 +43,7 @@ From the project directory
 
 ```
 bundle
+bin/rails db:migrate RAILS_ENV=development
 ```
 
 And then run the rails server
