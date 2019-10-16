@@ -1,6 +1,6 @@
-class ImportController < ApplicationController
+class Api::V1::ImportController < ApplicationController
     def index
-      render json: { message: 'this is the import controller', scans: Scan.all }
+      render json: { scans: Scan.all }
     end
 
     def show

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :import
-  root 'nmap#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api, default: { format: 'json' } do
+    namespace :v1 do
+      resources :import
+    end
+  end
 end
