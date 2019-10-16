@@ -1,4 +1,4 @@
-class Api::V1::ImportController < ApplicationController
+class Api::V1::ScansController < ApiController
     def index
       render json: { scans: Scan.all }
     end
