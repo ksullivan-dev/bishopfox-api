@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby Version
 
-Things you may want to cover:
+2.4.4
 
-* Ruby version
+## Getting started
 
-* System dependencies
+First, check your ruby version
+`ruby -v`
 
-* Configuration
+If its not 2.4.4, you can change it with RVM
+`\curl -sSL https://get.rvm.io | bash`
+(You might need to load RVM - replacing USER with your system)
+`/Users/USER/.rvm/bin/rvm`
+Then...
 
-* Database creation
+```
+rvm requirements
+rvm install 2.4.4
+rvm use 2.4.4 --default
+```
 
-* Database initialization
+Next, check for and/or install bundler
 
-* How to run the test suite
+```
+bundler -v
+gem install bundler
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+From the project directory
+`bundle`
 
-* Deployment instructions
-
-* ...
+And then run the rails server
+`rails server`
