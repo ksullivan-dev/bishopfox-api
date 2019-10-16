@@ -7,12 +7,21 @@
 ## Getting started
 
 First, check your ruby version
-`ruby -v`
+
+```
+ruby -v
+```
 
 If its not 2.4.4, you can change it with RVM
-`\curl -sSL https://get.rvm.io | bash`
+
+````
+\curl -sSL https://get.rvm.io | bash
+```
 (You might need to load RVM - replacing USER with your system)
-`/Users/USER/.rvm/bin/rvm`
+```
+/Users/USER/.rvm/bin/rvm
+````
+
 Then...
 
 ```
@@ -29,7 +38,13 @@ gem install bundler
 ```
 
 From the project directory
-`bundle`
+
+```
+bundle
+```
 
 And then run the rails server
-`rails server`
+
+```
+rails server
+```
