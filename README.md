@@ -51,3 +51,5 @@ And then run the rails server
 ```
 rails server
 ```
+
+And then you should be able to view the project at http://localhost:3000/
